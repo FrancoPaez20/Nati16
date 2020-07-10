@@ -1,0 +1,295 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+:root{
+
+	/*colores*/
+	--morado: #d76fff;
+	--moradoOscuro: #c337f8;
+	--rosa: #ffacf3;
+	--blanco: #fff;
+	--blancoGris: #fafafa;
+	--negro: #000;
+}
+
+*{
+
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Poppins', sans-serif;
+}
+
+/*INICIO SCROLL BAR*/
+::-webkit-scrollbar{
+
+	width: 0px;
+	background-color: var(--blanco);;
+}
+
+::-webkit-scrollbar-thumb{
+
+	border-radius: 0px;
+	background: #282828;
+}
+/*FIN SCROLL BAR*/
+
+.wrap{
+
+	max-width: 1000px;
+	width: 100%;
+	margin: auto;
+	padding: 0 1em;
+}
+
+.header{
+
+	height: 5em;
+	background: var(--morado);
+	position: sticky;
+	top:0;
+	z-index: 10;
+}
+
+.header__wrap{
+
+	max-width: 1000px;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	padding: 0 1em;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__logo{
+
+	color: var(--blanco);;
+	font-size: 3em;
+	font-weight: 900;
+}
+
+.header__btn{
+
+	display: none;
+}
+
+.nav__links{
+
+	color: var(--blanco);;
+	font-size: 1em;
+	padding: 0.3125em 1em;
+}
+
+.nav__links:hover{
+
+	background: var(--moradoOscuro)
+}
+
+.nav__links i{
+
+	margin-left: 1em;
+}
+
+.hero{
+
+	height: 35vh;
+	background: var(--blancoGris);
+	background-image: url('https://static-cdn.jtvnw.net/jtv_user_pictures/10b83ec6-13a4-4063-8855-788ed1c50331-profile_banner-480.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.about, .subs, .donaciones, .redes{
+
+	padding: 10em 0;
+}
+
+.titulo{
+
+	font-size: 2.5em;
+	margin-bottom: 1em;
+	position: relative;
+}
+
+.titulo:before{
+
+	position: absolute;
+	content: '';
+	width: 1em;
+	height: .2em;
+	left: 0;
+	bottom: -0.4em;
+	background: var(--moradoOscuro);
+	border-radius: 1em;
+}
+
+.titulo:after{
+
+	position: absolute;
+	content: '';
+	width: .2em;
+	height: .2em;
+	left: 1.2em;
+	bottom: -0.4em;
+	background: var(--moradoOscuro);
+	border-radius: 3em;
+}
+
+.texto{
+
+	font-size: 1em;
+	line-height: 2;
+}
+
+.donaciones__texto{
+
+	margin-bottom: 3em;
+}
+
+.subs, .redes{
+
+	background: var(--blancoGris);
+}
+
+.donaciones__botones{
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.donaciones__paypal, .donaciones__mercadoPago{
+
+	margin-right: 1em;
+}
+
+.donacion__btn{
+
+	padding: 1em 2em;
+	background: var(--morado);
+	color: var(--blanco);;
+	border-radius: 2em;
+	transition: .3s;
+	margin-top: 2em;
+}
+
+.donacion__btn:hover{
+
+	background: var(--moradoOscuro);
+}
+
+.donacion__btn i{
+
+	margin-right: 1em;
+}
+
+.redes__iconos a i{
+
+	font-size: 2em;
+	margin:0 1em 1em 0;
+	color: var(--negro);
+}
+
+.redes__iconos a i:hover{
+
+	color: var(--moradoOscuro);
+}
+
+.redes__iconos .fa-discord{
+
+	margin-right: 0;
+}
+
+.depro{
+
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+	background: #d90a6c;
+	background: #282828;
+	height: 4.375em;
+}
+
+.depro p{
+
+	color:var(--blanco);;
+	margin: 0;
+}
+
+.depro p span a{
+
+	font-family: 'Audiowide', sans-serif;
+	color: var(--blanco);;
+	line-height:4.375em;
+}
+
+@media screen and (max-width: 768px){
+
+	.header__nav{
+
+		display: none;
+	}
+
+	.header__btn{
+
+		display: block;
+	}
+
+
+	.about, .subs, .donaciones, .redes, .clips{
+
+		padding: 2.5em 0 !important;
+	}
+
+	.donaciones__texto{
+
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 425px){
+
+	.donaciones__paypal, .donaciones__mercadoPago{
+
+		margin-right: 0;
+	}
+
+	.donacion__btn{
+
+		width: 100%;
+		text-align: center;
+	}
+
+	.titulo{
+
+		font-size: 1.5em;
+		margin-bottom: 1.5em;
+	}
+}

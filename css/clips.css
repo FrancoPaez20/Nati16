@@ -1,0 +1,31 @@
+.clips{
+
+	padding: 5em 0;
+}
+
+.clips__container{
+
+	display: grid;
+	justify-content: space-evenly;
+	grid-column-gap: 49px;
+	grid-template-columns: repeat(auto-fill, 290px);
+}
+
+.clip{
+
+	width: 290px;
+	height: 163.13px;
+	background: var(--rosa);
+	margin-bottom: 20px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: 300;
+}
